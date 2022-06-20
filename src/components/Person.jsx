@@ -16,17 +16,17 @@ function Person({ person, staticImg, talkingImg }) {
     const timer = setInterval(function () {
       if (Date.now() - beforeAnimation <= duration) return;
       duration = 300 - 300 * multiplicador;
-      if (duration <= 60) {
+      if (duration <= 80) {
         return clearInterval(timer);
       }
       beforeAnimation = Date.now();
       element.animate(
         [
           {
-            filter: "drop-shadow(0 0 0px #fff)",
+            filter: "drop-shadow(0 0 0px #fff) blur(5px)",
           },
           {
-            filter: "drop-shadow(0 0 6px #fff) saturate(200%)",
+            filter: "drop-shadow(0 0 6px #fff) brightness(2)",
           },
           {
             filter: "drop-shadow(0 0 0px #fff)",

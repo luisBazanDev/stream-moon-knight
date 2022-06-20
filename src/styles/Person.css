@@ -3,7 +3,7 @@
   height: 10vw;
   object-fit: cover;
   filter: brightness(0.75);
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .person.active img {
