@@ -14,12 +14,15 @@ function ArrayAvg(myArray) {
 
 function AppProvider(props) {
   const [person, setPerson] = useState(0);
+  const [inTransition, setInTransition] = useState(false);
   const [isDownUmbral, setIsDownUmbral] = useState(true);
   const value = {
     person,
     setPerson,
     isDownUmbral,
     setIsDownUmbral,
+    inTransition,
+    setInTransition,
   };
 
   useEffect(() => {

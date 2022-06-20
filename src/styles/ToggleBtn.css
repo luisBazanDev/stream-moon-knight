@@ -1,0 +1,42 @@
+.togle-btn {
+  padding: 5px;
+  width: 3em;
+  height: 1.5em;
+  border-radius: 1em;
+  background: #ddd;
+  cursor: pointer;
+  position: fixed;
+}
+
+.togle-btn:hover {
+  background: #ccc;
+}
+
+.togle-btn .icon {
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  line-height: 1.5em;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.togle-btn .icon.p0 {
+  background: #66f;
+  left: 5px;
+}
+
+.togle-btn:hover .icon.p0 {
+  background: #55f;
+}
+
+.togle-btn .icon.p1 {
+  background: #f66;
+  left: auto;
+  right: 5px;
+}
+
+.togle-btn:hover .icon.p1 {
+  background: #f55;
+}
