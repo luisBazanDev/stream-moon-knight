@@ -1,6 +1,6 @@
 .person img {
-  width: 15vw;
-  height: 30vw;
+  width: 18vw;
+  height: 36vw;
   object-fit: contain;
   filter: brightness(0.75);
   transition: 0.2s;

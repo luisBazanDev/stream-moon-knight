@@ -32,7 +32,7 @@ function LightSpot() {
         },
       ],
       {
-        duration: 2000,
+        duration: 2300,
       }
     );
     if (id === 0) {

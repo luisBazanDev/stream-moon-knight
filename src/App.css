@@ -19,12 +19,12 @@ body {
 }
 
 #person-0 {
-  left: 15vw;
+  left: 14vw;
   top: 40vh;
 }
 
 #person-1 {
-  right: 15vw;
+  right: 14vw;
   top: 40vh;
   left: auto;
   transform: scaleX(-1);
