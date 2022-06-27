@@ -3,10 +3,10 @@ import { useContext, useEffect } from "react";
 import AppContext from "./AppContext";
 import Person from "./components/Person";
 import ToggleBtn from "./components/ToggleBtn";
+import LightSpot from "./components/LightSpot";
 
 function App() {
-  const { isDownUmbral, inTransition, setInTransition } =
-    useContext(AppContext);
+  const { inTransition, setInTransition } = useContext(AppContext);
 
   useEffect(() => {
     if (inTransition) {
@@ -19,18 +19,19 @@ function App() {
   });
 
   return (
-    <div>
+    <div className="app">
+      <img className="background" src="/background.jpg" alt="background" />
       <Person
         person={0}
-        staticImg="/person-0-static.png"
-        talkingImg="/person-0-talking.png"
+        staticImg="/sint_cast_static.gif"
+        talkingImg="/sint_cast_talking.gif"
       />
       <Person
         person={1}
-        staticImg="/person-0-static.png"
-        talkingImg="/person-0-talking.png"
+        staticImg="/sint_cast_chullo_static.gif"
+        talkingImg="/sint_cast_chullo_talking.gif"
       />
-      <span>{isDownUmbral ? "mute" : "unmute"}</span>
+      <LightSpot />
       <ToggleBtn />
       <audio src="/transition.m4a" id="audio-transition"></audio>
     </div>

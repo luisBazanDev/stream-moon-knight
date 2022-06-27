@@ -6,6 +6,7 @@
   background: #ddd;
   cursor: pointer;
   position: fixed;
+  z-index: 200;
 }
 
 .togle-btn:hover {

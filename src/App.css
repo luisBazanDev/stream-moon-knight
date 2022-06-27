@@ -1,5 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background: #000;
   color: #fff;
   font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#person-0 {
+  left: 15vw;
+  top: 40vh;
+}
+
+#person-1 {
+  right: 15vw;
+  top: 40vh;
+  left: auto;
+  transform: scaleX(-1);
+}
+
+.app .togle-btn {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
 }

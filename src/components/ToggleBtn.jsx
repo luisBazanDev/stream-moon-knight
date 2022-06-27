@@ -9,6 +9,7 @@ function ToggleBtn() {
     <div
       className="togle-btn"
       onClick={() => {
+        if (context.inTransition) return;
         context.setPerson(context.person === 1 ? 0 : 1);
         context.setInTransition(true);
       }}

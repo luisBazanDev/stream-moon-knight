@@ -45,7 +45,8 @@ function AppProvider(props) {
       const fbc_array = new Uint8Array(analyser.frequencyBinCount);
       analyser.getByteFrequencyData(fbc_array);
       const volume = ArrayAvg(fbc_array);
-      if (volume > 40) {
+      //console.log(volume);
+      if (volume > 36) {
         setIsDownUmbral(false);
         i = 0;
       } else if (i > 10) {
